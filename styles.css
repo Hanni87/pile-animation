@@ -15,12 +15,13 @@
   height: 200px;
   margin: 10px;
   overflow: hidden;
+  position: relative;
   border: 1px grey solid;
 }
 
 .pile-text {
   margin: 10px;
-  margin-top: -90px;
+  margin-top: -85px;
   z-index: 0;
   display: block;
 }
@@ -31,6 +32,33 @@
   z-index: 1;
 }
 
-.pile-image:hover {
+.pile:hover > .pile-image {
   transform: translateY(-50%);
+}
+
+.pile-more {
+  position: absolute;
+  bottom: 3px;
+  right: 3px;
+}
+
+.pile-more {
+  background-color: #ffffff;
+  border: 1px solid rgb(209, 213, 219);
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.pile-more:hover {
+  background-color: rgb(249, 250, 251);
+}
+
+.pile-mor:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.pile-more:focus-visible {
+  box-shadow: none;
 }
