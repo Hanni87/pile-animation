@@ -16,14 +16,17 @@
   margin: 10px;
   overflow: hidden;
   position: relative;
-  border: 1px grey solid;
+  cursor: pointer;
 }
 
 .pile-text {
-  margin: 10px;
-  margin-top: -85px;
+  padding: 10px;
+  margin-top: -100px;
+  height: 100px;
   z-index: 0;
   display: block;
+  border: 1px #b2b2b2 solid;
+  border-top: 0;
 }
 
 .pile-image {
@@ -36,29 +39,23 @@
   transform: translateY(-50%);
 }
 
-.pile-more {
+.pile-image-des {
+  font-family: 'Roboto', sans-serif;
+  line-height: 20px;
+  font-weight: 700;
+  letter-spacing: 0.02px;
+  color: #f8f8f8;
   position: absolute;
-  bottom: 3px;
-  right: 3px;
+  bottom: 10%;
+  left: 10%;
+  font-size: 1.5em;
 }
 
-.pile-more {
-  background-color: #ffffff;
-  border: 1px solid rgb(209, 213, 219);
-  border-radius: 0.5rem;
-  box-sizing: border-box;
-  cursor: pointer;
-}
-
-.pile-more:hover {
-  background-color: rgb(249, 250, 251);
-}
-
-.pile-mor:focus {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-}
-
-.pile-more:focus-visible {
-  box-shadow: none;
+.linkSpanner{
+  position:absolute; 
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+  z-index: 1;
 }
